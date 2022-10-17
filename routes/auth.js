@@ -100,6 +100,9 @@ router.post("/login", (req, res) => {
 });
 
 router.post("/cart", (req, res) => {
+
+  console.log(req.body);
+
   const {
     cart: { products, total, quantity },
     username,
